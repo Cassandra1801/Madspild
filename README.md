@@ -1,2 +1,2 @@
 # Madspild
-2. semster første projekt vedr. madspild
+2. semester første projekt vedr. madspild
