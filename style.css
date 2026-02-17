@@ -1,18 +1,35 @@
-.logo img{
-    width: 150px;
+header {
+    background-color: white;
 }
 
-body{
+.logo img {
+    width: 150px;
+    float: left;
+}
+
+menu {
+    float: right;
+    margin-top: 50px ;
+}
+
+menu a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+body {
     background-color: darkgreen;
 }
 
+#opskrifter {
+    display: flex;
+}
 
 
 
-
-
-
-
+/*Her starter TICKER / RULLER*/
 .ticker-section {
     background: #111;
     overflow: hidden;
@@ -44,12 +61,20 @@ body{
     to {
         transform: translateX(-50%);
     }}
+/* Her slutter TICKER / RULLER */
 
 
+.footer {
+    display: flex;  /* gør at divs ligger på række*/
+    justify-content: space-between; /* fordeler dem på en række*/
+    align-items: center;
 
+    position: fixed; /* footer sidder fast nederst*/
+    bottom: 0;
+    width: 100%;
+}
 
-#socials {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
+.footer-box {
+    flex: 1;  /* alle får lige meget plads*/
+    text-align: center;
 }
