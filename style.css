@@ -21,6 +21,10 @@ menu a {
 
 body {
     background-color: darkgreen;
+
+    /* Margin og padding er fordi at body by default er forskudt omkring 10 px. Dette resetter det*/
+    margin: 0;
+    padding: 0;
 }
 
 #opskrifter {
@@ -34,6 +38,10 @@ body {
     background: #111;
     overflow: hidden;
     padding: 20px 0;
+
+    position: fixed; /* footer sidder fast nederst*/
+    bottom: 50px;
+    width: 100%;
 }
 
 .ticker {
