@@ -1,37 +1,33 @@
-header {
-    background-color: white;
-}
-
-img {
-    width: 150px;
-    float: left;
-}
-
-menu {
-    float: right;
-    margin-bottom: 50px;
-}
-
-menu a {
-    color: white;
-    margin-left: 50px;
-    font-weight: bold;
-    justify-content: space-around;
-}
-
-body {
-    background-color: darkgreen;
-
-    /* Margin og padding er fordi at body by default er forskudt omkring 10 px. Dette resetter det*/
-    margin: 0;
-    padding: 0;
-}
-
-#opskrifter {
+.header {
     display: flex;
+    justify-content: space-around; /* laver mellemrum */
+    align-items: center;
+
+    position: fixed;
+    top: 0; /* VIGTIG! ellers ved den ikke hvor */
+    width: 100%;
+    background-color: white;
+    padding: 15px 0;
+
+    .header-box {
+        flex: 1; /* alle får lige meget plads*/
+        text-align: center;
+    }
+
 }
 
+    img {
+        width: 150px;
+        float: left;
+    }
 
+    body {
+        background-color: darkgreen;
+        margin: 0;
+    }
+
+
+    /*Her starter TICKER / RULLER*/
 
 /*Her starter TICKER / RULLER*/
 .ticker-section {
@@ -44,45 +40,52 @@ body {
     width: 100%;
 }
 
-.ticker {
-    width: 100%;
-    overflow: hidden;
-}
+    .ticker {
+        width: 100%;
+        overflow: hidden;
+    }
 
-.ticker-track {
-    display: flex;
-    gap: 40px;
-    white-space: nowrap;
-    animation: scroll 20s linear infinite;
-}
+    .ticker-track {
+        display: flex;
+        gap: 40px;
+        white-space: nowrap;
+        animation: scroll 20s linear infinite;
+    }
 
-.ticker-track span {
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-}
+    .ticker-track span {
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
 
-@keyframes scroll {
-    from {
-        transform: translateX(0);
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
     }
     to {
         transform: translateX(-50%);
-    }}
+    }
+}
 /* Her slutter TICKER / RULLER */
 
 
-.footer {
-    display: flex;  /* gør at divs ligger på række*/
-    justify-content: space-between; /* fordeler dem på en række*/
-    align-items: center;
+    .footer {
+        display: flex; /* gør at divs ligger på række*/
+        justify-content: space-between; /* fordeler dem på en række*/
+        align-items: center;
 
     position: fixed; /* footer sidder fast nederst*/
     bottom: 0;
     width: 100%;
+    background-color: white;
+    padding: 15px 0;
 }
 
-.footer-box {
-    flex: 1;  /* alle får lige meget plads*/
-    text-align: center;
-}
+    .footer-box {
+        flex: 1; /* alle får lige meget plads*/
+        text-align: center;
+    }
