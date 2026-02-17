@@ -61,7 +61,11 @@
             transform: translateX(-50%);
         }
     }
-    /* Her slutter TICKER / RULLER */
+    to {
+        transform: translateX(-50%);
+    }
+}
+/* Her slutter TICKER / RULLER */
 
 
     .footer {
@@ -69,10 +73,12 @@
         justify-content: space-between; /* fordeler dem på en række*/
         align-items: center;
 
-        position: fixed; /* footer sidder fast nederst*/
-        bottom: 0;
-        width: 100%;
-    }
+    position: fixed; /* footer sidder fast nederst*/
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    padding: 15px 0;
+}
 
     .footer-box {
         flex: 1; /* alle får lige meget plads*/
