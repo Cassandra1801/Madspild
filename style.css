@@ -29,11 +29,16 @@
 
     /*Her starter TICKER / RULLER*/
 
-    .ticker-section {
-        background: #111;
-        overflow: hidden;
-        padding: 20px 0;
-    }
+/*Her starter TICKER / RULLER*/
+.ticker-section {
+    background: #111;
+    overflow: hidden;
+    padding: 20px 0;
+
+    position: fixed; /* footer sidder fast nederst*/
+    bottom: 50px;
+    width: 100%;
+}
 
     .ticker {
         width: 100%;
