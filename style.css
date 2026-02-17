@@ -1,80 +1,80 @@
-header {
-    background-color: white;
-}
-
-img {
-    width: 150px;
-    float: left;
-}
-
-menu {
-    float: right;
-    margin-bottom: 50px;
-}
-
-menu a {
-    color: white;
-    margin-left: 50px;
-    font-weight: bold;
-    justify-content: space-around;
-}
-
-body {
-    background-color: darkgreen;
-}
-
-#opskrifter {
+.header {
     display: flex;
-}
-
-
-
-/*Her starter TICKER / RULLER*/
-.ticker-section {
-    background: #111;
-    overflow: hidden;
-    padding: 20px 0;
-}
-
-.ticker {
-    width: 100%;
-    overflow: hidden;
-}
-
-.ticker-track {
-    display: flex;
-    gap: 40px;
-    white-space: nowrap;
-    animation: scroll 20s linear infinite;
-}
-
-.ticker-track span {
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }}
-/* Her slutter TICKER / RULLER */
-
-
-.footer {
-    display: flex;  /* gør at divs ligger på række*/
-    justify-content: space-between; /* fordeler dem på en række*/
+    justify-content: space-around; /* laver mellemrum */
     align-items: center;
 
-    position: fixed; /* footer sidder fast nederst*/
-    bottom: 0;
+    position: fixed;
+    top: 0; /* VIGTIG! ellers ved den ikke hvor */
     width: 100%;
+    background-color: white;
+    padding: 15px 0;
+
+    .header-box {
+        flex: 1; /* alle får lige meget plads*/
+        text-align: center;
+    }
+
 }
 
-.footer-box {
-    flex: 1;  /* alle får lige meget plads*/
-    text-align: center;
-}
+    img {
+        width: 150px;
+        float: left;
+    }
+
+    body {
+        background-color: darkgreen;
+        margin: 0;
+    }
+
+
+    /*Her starter TICKER / RULLER*/
+
+    .ticker-section {
+        background: #111;
+        overflow: hidden;
+        padding: 20px 0;
+    }
+
+    .ticker {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .ticker-track {
+        display: flex;
+        gap: 40px;
+        white-space: nowrap;
+        animation: scroll 20s linear infinite;
+    }
+
+    .ticker-track span {
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    @keyframes scroll {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+    /* Her slutter TICKER / RULLER */
+
+
+    .footer {
+        display: flex; /* gør at divs ligger på række*/
+        justify-content: space-between; /* fordeler dem på en række*/
+        align-items: center;
+
+        position: fixed; /* footer sidder fast nederst*/
+        bottom: 0;
+        width: 100%;
+    }
+
+    .footer-box {
+        flex: 1; /* alle får lige meget plads*/
+        text-align: center;
+    }
