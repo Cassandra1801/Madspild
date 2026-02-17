@@ -60,7 +60,8 @@ body {
     }
     to {
         transform: translateX(-50%);
-    }}
+    }
+}
 /* Her slutter TICKER / RULLER */
 
 
@@ -72,6 +73,8 @@ body {
     position: fixed; /* footer sidder fast nederst*/
     bottom: 0;
     width: 100%;
+    background-color: white;
+    padding: 15px 0;
 }
 
 .footer-box {
