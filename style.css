@@ -2,21 +2,21 @@ header {
     background-color: white;
 }
 
-.logo img {
-    width: 50px;
+img {
+    width: 150px;
     float: left;
 }
 
 menu {
     float: right;
-    margin-top: 50px ;
+    margin-bottom: 50px;
 }
 
 menu a {
-    text-decoration: none;
     color: white;
-    margin-left: 10px;
+    margin-left: 50px;
     font-weight: bold;
+    justify-content: space-around;
 }
 
 body {
