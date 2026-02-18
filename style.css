@@ -26,6 +26,29 @@ body {
     margin: 0;
 }
 
+
+/*Her starter 3 transperante boxe*/
+.box-section {
+    display: flex;
+    justify-content: space-evenly; /* Even horizontal spacing */
+    align-items: flex-start;
+    margin-top: 45vh; /* Instead of absolute positioning */
+}
+
+.transparent-box {
+    width: 30vw;
+    height: 35vh;
+    padding: 20px;
+    background: linear-gradient(
+            to top,
+            #fefae080,   /* bottom - mostly solid */
+            #fefae015      /* top - fully transparent */
+    );
+}
+
+/*Her slutter 3 transperante boxe*/
+
+
 /*Her starter TICKER / RULLER*/
 .ticker-section {
     background: #111;
