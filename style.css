@@ -53,7 +53,7 @@ body {
     color: white;
     font-weight: bold;
     font-size: 18px;
-}
+    }
 
 @keyframes scroll {
     from {
@@ -62,9 +62,6 @@ body {
     to {
         transform: translateX(-50%);
     }
-}
-to {
-    transform: translateX(-50%);
 }
 
 /* Her slutter TICKER / RULLER */
