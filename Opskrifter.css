@@ -7,24 +7,25 @@ body {
 /* Header START */
 .header {
     width: 100%;
-    background-color: white;
+    background-color: white; /* Hvid bar øverst */
 }
 
 .header-box {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: flex; /* Gør menuen til flexbox */
+    align-items: center; /* Centrer lodret */
+    justify-content: space-evenly; /* Lige meget afstand mellem alle menupunkter */
 }
 
 .header-box img {
     height: 60px;
     width: auto;
+    /* Bevarer proportioner */
 }
 /* Header SLUT */
 
 /* Menu START */
 .menu-item {
-    text-decoration: none;
+    text-decoration: none; /* Fjerner underline */
     color: black;
     font-size: 20px;
 }
@@ -43,7 +44,7 @@ h2 {
 }
 /*Overskrift SLUT*/
 
-/*Tekst vedr. opskrifter med madspild START*/
+/*Intro-tekst START*/
 p {
     font-family: Arial;
     font-size: 20px;
@@ -57,114 +58,74 @@ p {
     align-items: flex-start;
     /* Lodret centrering */
 }
-/*Tekst vedr. opskrifter med madspild SLUT*/
+/*Intro-tekst SLUT*/
 
-.Boller {
-    display: flex;
+
+/* ========================= */
+/* FÆLLES OPSKRIFT-STYLING   */
+/* ========================= */
+
+.opskrift {
+    display: flex; /* Lægger tekst og billede på række */
+    align-items: center; /* Centrer lodret */
+    justify-content: space-between; /* Plads mellem tekst og billede */
+
+    gap: 4vw; /* Afstand mellem elementer */
+    width: min(1200px,92vw); /* Max bredde */
+    margin: 40px auto 0; /* Centrer containeren */
+}
+
+.række { /* Layout-variationer (samme stil, forskellig placering*/
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4vw;
-    width: min(1200px,92vw);
-    margin: 40px auto 0;
 }
 
-.text {
-    width: min(650px, 52vw);
-    max-width: none;
-    font-family: "Bodoni 72";
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.image-wrapper {
-    position: relative;
-    width: min(500px, 40vw);
-    margin-right: 0;
-    flex-shrink: 0;
-}
-
-.image-wrapper img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hidden_text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background: rgba(255, 255, 255, 0.7);  /* hvid med 70% gennemsigtighed */
-    color: black;  /* sort tekst så den kan ses */
-
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
-    opacity: 0;
-    transition: 0.3s ease;
-}
-
-.image-wrapper:hover .hidden_text {
-    opacity: 1;
-}
-
-
-
-
-.Vafler {
-    display: flex;
+.række-reverse {
     flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4vw;
-    width: min(1200px,92vw);
-    margin: 40px auto 0;
 }
 
-.tekst {
+/* Tekstboks START */
+.opskrift-tekst {
     width: min(650px, 52vw);
-    max-width: none;
     font-family: "Bodoni 72";
     font-size: 20px;
     line-height: 1.5;
 }
+/* Tekstboks SLUT*/
 
-.billede {
+/* Billede-wrapper (gør overlay muligt) */
+.opskrift-billede {
     position: relative;
     width: min(500px, 40vw);
-    margin-right: 0;
     flex-shrink: 0;
 }
 
-.billede img {
+.opskrift-billede img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.gemt_tekst {
+/* Overlay tekst (skjult før hover) */
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
 
-    background: rgba(255, 255, 255, 0.7);  /* hvid med 70% gennemsigtighed */
-    color: black;  /* sort tekst så den kan ses */
+    background: rgba(255, 255, 255, 0.7);
 
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 
     opacity: 0;
     transition: 0.3s ease;
 }
 
-.billede:hover .gemt_tekst {
+/* Vis overlay når musen er over billedet */
+.opskrift-billede:hover .overlay {
     opacity: 1;
 }
 
