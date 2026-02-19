@@ -37,11 +37,11 @@ body {
 
 .transparent-box {
     width: 30vw;
-    height: 35vh;
+    height: 25vh;
     padding: 20px;
     background: linear-gradient(
             to top,
-            #fefae080,   /* bottom - mostly solid */
+            #fefae060,   /* bottom - mostly solid */
             #fefae015      /* top - fully transparent */
     );
 }
