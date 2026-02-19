@@ -1,3 +1,4 @@
+/* HEADER start */
 .header {
     width: 100%;
     background-color: white;
@@ -13,31 +14,49 @@
     height: 60px;
     width: auto;
 }
+/* HEADER slut */
 
-/* Menu*/
+/* Menu start*/
 .menu-item {
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
+/* Menu start*/
 
 body {
     background-color: #97AC82;
     margin: 0;
+    min-height: 200vh;
 }
 
-
-/*Her starter 3 transperante boxe*/
+/*Her starter 3 transparente bokse*/
 .box-section {
     display: flex;
     justify-content: space-evenly; /* Even horizontal spacing */
-    align-items: flex-start;
-    margin-top: 45vh; /* Instead of absolute positioning */
+    align-items: flex-start; /* Align items at the start*/
+    margin-top: 60vh; /* Space from the top of the viewport */
+}
+
+.hidden_text {
+    opacity: 0;  /* 0= helt usynlig*/
+    transition: opacity 0.3s ease; /* 0.3s = animationens varighed */ /* ease = starter og slutter blødt */
+}
+
+.transparent-box:hover .hidden_text {
+    opacity: 1; /* 1= helt synlig*/
 }
 
 .transparent-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Lodret centrering*/
+    align-items: center; /* Vandret centrering*/
+
+    text-align: center;
+
     width: 30vw;
-    height: 25vh;
+    height: 75vh;
     padding: 20px;
     background: linear-gradient(
             to top,
@@ -45,8 +64,7 @@ body {
             #fefae015      /* top - fully transparent */
     );
 }
-
-/*Her slutter 3 transperante boxe*/
+/*Her slutter 3 transparente bokse*/
 
 
 /*Her starter TICKER / RULLER*/
@@ -86,7 +104,6 @@ body {
         transform: translateX(-50%);
     }
 }
-
 /* Her slutter TICKER / RULLER */
 
 
