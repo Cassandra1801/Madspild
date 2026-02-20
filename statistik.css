@@ -1,43 +1,37 @@
-/* Baggrunden på hele siden START*/
+/* Baggrunden på hele siden START */
 body {
     background-color: #97AC82;
 }
-/* Baggrunden på hele siden SLUT*/
+/* Baggrunden på hele siden SLUT */
 
-.event-side-titel p {
-    font-family: "Apple Braille", "sans-serif";
-    font-size: 20px;
+.stats-section,
+.hero-section,
+.highlight-section,
+.quiz-section {
+    font-family: "Bodoni 72", "sans-serif";
+}
 
-
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
+.event-side-titel {
+    text-align: center;
+    margin: 40px auto 10px;
+    width: 90%;
+    max-width: 900px;
 }
 
 .event-side-titel h2 {
-    margin-bottom: 0;
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
+    margin-bottom: 8px;
 }
 
+.event-side-titel p {
+    margin: 0;
+    font-family: "Bodoni 72", sans-serif;
+    font-size: 20px;
+}
 
 .hero-section {
     width: 90%;
     max-width: 1200px;
-    margin: 60px auto;
-    margin-top: 20px;
-
+    margin: 20px auto 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
@@ -64,7 +58,6 @@ body {
     line-height: 1.6;
 }
 
-
 .stats-section {
     display: flex;
     justify-content: center;
@@ -87,7 +80,7 @@ body {
 
 .stats-intro p {
     margin: 0;
-    font-family: "Bodoni 72";
+    font-family: "Bodoni 72", sans-serif;
     font-size: 20px;
     line-height: 1.6;
 }
@@ -107,7 +100,7 @@ body {
     padding: 25px;
     border-radius: 15px;
     background-color: #d9e2c9;
-    box-shadow: 5px 15px 15px rgba(0,0,0,0.3);
+    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -121,30 +114,15 @@ body {
 
 .stat-box:hover {
     transform: translateY(-8px);
-    box-shadow: 8px 20px 24px rgba(0,0,0,0.35);
+    box-shadow: 8px 20px 24px rgba(0, 0, 0, 0.35);
 }
 
 .stat-box h2 {
     margin-top: 0;
 }
 
-.stat-box { /*Kasserne rundt om pointerne*/
-    width: 100%;
-    max-width: 1200px;
-    padding: 15px 60px;
-    background-color: rgba(255,255,255,0.25);
-    border-radius: 15px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    margin: 25px;
-}
-
 .stat-box p {
-    font-family: "Bodoni 72";
+    font-family: "Bodoni 72", sans-serif;
     font-size: 20px;
     line-height: 1.6;
     color: black;
@@ -164,7 +142,7 @@ body {
     height: 280px;
     object-fit: cover;
     border-radius: 16px;
-    box-shadow: 5px 15px 15px rgba(0,0,0,0.3);
+    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Quiz section heading and card links */
@@ -190,7 +168,7 @@ body {
 
 .quiz-intro p {
     margin: 0;
-    font-family: "Bodoni 72";
+    font-family: "Bodoni 72", sans-serif;
     font-size: 20px;
     line-height: 1.6;
 }
@@ -209,13 +187,13 @@ body {
     background-color: #f1f5e8;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 5px 12px 14px rgba(0,0,0,0.25);
+    box-shadow: 5px 12px 14px rgba(0, 0, 0, 0.25);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .quiz-box:hover {
     transform: translateY(-6px);
-    box-shadow: 8px 18px 22px rgba(0,0,0,0.32);
+    box-shadow: 8px 18px 22px rgba(0, 0, 0, 0.32);
 }
 
 .quiz-box h3 {
@@ -224,63 +202,25 @@ body {
 
 .quiz-box p {
     margin: 0;
-    font-family: "Bodoni 72";
+    font-family: "Bodoni 72", sans-serif;
     font-size: 20px;
     line-height: 1.5;
 }
 
-/* Responsive layout for tablet and mobile */
-@media (max-width: 1100px) {
-    .stats-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .stat-box {
-        grid-column: auto;
-    }
-
-    .stat-box:nth-child(4),
-    .stat-box:nth-child(5) {
-        grid-column: auto;
-    }
-
-    .quiz-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 700px) {
-    .stats-container {
-        grid-template-columns: 1fr;
-    }
-
-    .stat-box {
-        grid-column: auto;
-    }
-
-    .stats-image {
-        height: 220px;
-    }
-}
-    font-size: larger;
-}
-
-
-
 .highlight-section {
     width: 100%;
-    background-color: white;   /* The white strip */
-    padding: 20px 10px;        /* Space top & bottom */
+    background-color: white;
+    padding: 20px 10px;
 }
 
 .highlight-content {
     max-width: 1200px;
-    margin: 0 auto;            /* Center content */
+    margin: 0 auto;
 }
 
 .highlight-content h2 {
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 20px;
     font-size: 28px;
 }
@@ -292,7 +232,6 @@ body {
     justify-content: center;
     gap: 60px;
     margin-top: 40px;
-
 }
 
 .highlight-row img {
@@ -307,14 +246,64 @@ body {
     line-height: 1.6;
     text-align: justify;
     text-justify: inter-word;
-
 }
 
-.thin-white-strip {
-    width: 100vw;          /* Full width across the page */
-    height: 70px;          /* Adjust the thickness here */
-    background-color: white; /* White color */
-    margin: 0;       /* Optional spacing above and below */
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+/* Responsive layout for tablet and mobile */
+@media (max-width: 1100px) {
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-box,
+    .stat-box:nth-child(4),
+    .stat-box:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .quiz-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-container,
+    .hero-container:nth-child(odd) {
+        justify-content: center;
+        text-align: left;
+    }
+
+    .highlight-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .highlight-row p {
+        max-width: 90%;
+    }
 }
 
+@media (max-width: 700px) {
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-image {
+        height: 220px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-container p {
+        max-width: 100%;
+    }
+
+    .hero-container img {
+        width: 240px;
+    }
+}
