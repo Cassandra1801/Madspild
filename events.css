@@ -1,0 +1,61 @@
+/* Baggrunden på hele siden START*/
+body {
+    background-color: #97AC82;
+}
+/* Baggrunden på hele siden SLUT*/
+
+/* Header START */
+.header {
+    width: 100%;
+    background-color: white; /* Hvid bar øverst */
+}
+
+.header-box {
+    display: flex; /* Gør menuen til flexbox */
+    align-items: center; /* Centrer lodret */
+    justify-content: space-evenly; /* Lige meget afstand mellem alle menupunkter */
+}
+
+.header-box img {
+    height: 60px;
+    width: auto;
+    /* Bevarer proportioner */
+}
+/* Header SLUT */
+
+/* Menu START */
+.menu-item {
+    text-decoration: none; /* Fjerner underline */
+    color: black;
+    font-size: 20px;
+}
+/* Menu SLUT*/
+
+/*Overskrift START*/
+h2 {
+    display: flex;
+    /* Gør body til en flex-container */
+
+    justify-content: center;
+    /* Vandret centrering */
+
+    align-items: flex-start;
+    /* Lodret centrering */
+}
+/*Overskrift SLUT*/
+
+/*Intro-tekst START*/
+p {
+    font-family: "Apple Braille";
+    font-size: 20px;
+
+    display: flex;
+    /* Gør body til en flex-container */
+
+    justify-content: center;
+    /* Vandret centrering */
+
+    align-items: flex-start;
+    /* Lodret centrering */
+}
+/*Intro-tekst SLUT*/
