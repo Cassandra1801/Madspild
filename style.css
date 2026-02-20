@@ -1,3 +1,7 @@
+* {
+    font-family: roboto;
+}
+
 /* HEADER start */
 .header {
     width: 100%;
@@ -11,61 +15,20 @@
 }
 
 .header-box img {
-    height: 60px;
+    height: 100px;
     width: auto;
 }
-/* HEADER slut */
 
-/* Menu start*/
 .menu-item {
-    text-decoration: none;
-    color: black;
-    font-size: 20px;
-}
-/* Menu start*/
-
-body {
-    background-color: #97AC82;
-    margin: 0;
-    min-height: 200vh;
+    position: relative;
+    padding: 50px;
+    background-image: url("assets-header/menu-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/*Her starter 3 transparente bokse*/
-.box-section {
-    display: flex;
-    justify-content: space-evenly; /* Even horizontal spacing */
-    align-items: flex-start; /* Align items at the start*/
-    margin-top: 60vh; /* Space from the top of the viewport */
-}
-
-.hidden_text {
-    opacity: 0;  /* 0= helt usynlig*/
-    transition: opacity 0.3s ease; /* 0.3s = animationens varighed */ /* ease = starter og slutter blødt */
-}
-
-.transparent-box:hover .hidden_text {
-    opacity: 1; /* 1= helt synlig*/
-}
-
-.transparent-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Lodret centrering*/
-    align-items: center; /* Vandret centrering*/
-
-    text-align: center;
-
-    width: 30vw;
-    height: 75vh;
-    padding: 20px;
-    background: linear-gradient(
-            to top,
-            #fefae060,   /* bottom - mostly solid */
-            #fefae015      /* top - fully transparent */
-    );
-}
-/*Her slutter 3 transparente bokse*/
-
+/* HEADER slut */
 
 /*Her starter TICKER / RULLER*/
 .ticker-section {
@@ -73,7 +36,7 @@ body {
     overflow: hidden;
     padding: 20px 0;
 
-    position: fixed; /* footer sidder fast nederst*/
+    position: static; /* footer sidder fast nederst*/
     bottom: 48px;
     width: 100%;
 }
@@ -112,7 +75,7 @@ body {
     justify-content: space-between; /* fordeler dem på en række*/
     align-items: center;
 
-    position: fixed; /* footer sidder fast nederst*/
+    position: static; /* footer sidder fast nederst*/
     bottom: 0;
     width: 100%;
     background-color: white;
