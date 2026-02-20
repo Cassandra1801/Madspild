@@ -4,32 +4,151 @@ body {
 }
 /* Baggrunden på hele siden SLUT*/
 
+.event-side-titel p {
+    font-family: "Apple Braille", "sans-serif";
+    font-size: 20px;
+
+
+    display: flex;
+    /* Gør body til en flex-container */
+
+    justify-content: center;
+    /* Vandret centrering */
+
+    align-items: flex-start;
+    /* Lodret centrering */
+}
+
+.event-side-titel h2 {
+    margin-bottom: 0;
+    display: flex;
+    /* Gør body til en flex-container */
+
+    justify-content: center;
+    /* Vandret centrering */
+
+    align-items: flex-start;
+    /* Lodret centrering */
+}
+
+
+.hero-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto;
+    margin-top: 20px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-container:nth-child(odd) {
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.hero-container img {
+    width: 300px;
+    height: auto;
+}
+
+.hero-container p {
+    max-width: 300px;
+    line-height: 1.6;
+}
+
+
+
+
+
 
 .stats-section {
     display: flex;
-    gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 60px auto;
+    margin: auto;
     width: 90%;
+    padding: 40px 0;
 }
 
 .stat-box { /*Kasserne rundt om pointerne*/
-    width: 400px;
-    padding: 25px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 15px 60px;
+    background-color: rgba(255,255,255,0.25);
     border-radius: 15px;
-    box-shadow: 5px 15px 15px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
 
     display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 60px auto;
-    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
 
+    margin: 25px;
 }
 
 .stat-box p {
     line-height: 1.6;
     color: black;
+    font-size: larger;
 }
+
+
+
+.highlight-section {
+    width: 100%;
+    background-color: white;   /* The white strip */
+    padding: 20px 10px;        /* Space top & bottom */
+}
+
+.highlight-content {
+    max-width: 1200px;
+    margin: 0 auto;            /* Center content */
+}
+
+.highlight-content h2 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.highlight-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+
+}
+
+.highlight-row img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+}
+
+.highlight-row p {
+    max-width: 400px;
+    font-size: larger;
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+.thin-white-strip {
+    width: 100vw;          /* Full width across the page */
+    height: 70px;          /* Adjust the thickness here */
+    background-color: white; /* White color */
+    margin: 0;       /* Optional spacing above and below */
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
+}
+
