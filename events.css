@@ -4,49 +4,10 @@ body {
 }
 /* Baggrunden på hele siden SLUT*/
 
-/* Header START */
-.header {
-    width: 100%;
-    background-color: white; /* Hvid bar øverst */
-}
+/* EVENTS SIDE TITEL OG FÆLLES EVENT-STYLING */
 
-.header-box {
-    display: flex; /* Gør menuen til flexbox */
-    align-items: center; /* Centrer lodret */
-    justify-content: space-evenly; /* Lige meget afstand mellem alle menupunkter */
-}
-
-.header-box img {
-    height: 60px;
-    width: auto;
-    /* Bevarer proportioner */
-}
-/* Header SLUT */
-
-/* Menu START */
-.menu-item {
-    text-decoration: none; /* Fjerner underline */
-    color: black;
-    font-size: 20px;
-}
-/* Menu SLUT*/
-
-/*Overskrift START*/
-h2 {
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
-}
-/*Overskrift SLUT*/
-
-/*Intro-tekst START*/
-p {
-    font-family: "Apple Braille";
+.event-side-titel p {
+    font-family: "Apple Braille", "sans-serif";
     font-size: 20px;
 
     display: flex;
@@ -58,13 +19,19 @@ p {
     align-items: flex-start;
     /* Lodret centrering */
 }
-/*Intro-tekst SLUT*/
 
-/* ========================= */
-/* FÆLLES EVENT-STYLING   */
-/* ========================= */
+.event-side-titel h2 {
+    display: flex;
+    /* Gør body til en flex-container */
 
-.event {
+    justify-content: center;
+    /* Vandret centrering */
+
+    align-items: flex-start;
+    /* Lodret centrering */
+}
+
+.event-row {
     display: flex; /* Lægger tekst og billede på række */
     align-items: center; /* Centrer lodret */
     justify-content: space-between; /* Plads mellem tekst og billede */
@@ -72,20 +39,26 @@ p {
     gap: 4vw; /* Afstand mellem elementer */
     width: min(1200px,92vw); /* Max bredde */
     margin: 40px auto 0; /* Centrer containeren */
-}
-
-.række { /* Layout-variationer (samme stil, forskellig placering*/
     flex-direction: row;
 }
 
-.række-reverse {
+.event-row-reverse {
+    display: flex; /* Lægger tekst og billede på række */
+    align-items: center; /* Centrer lodret */
+    justify-content: space-between; /* Plads mellem tekst og billede */
+
+    gap: 4vw; /* Afstand mellem elementer */
+    width: min(1200px,92vw); /* Max bredde */
+    margin: 40px auto 0; /* Centrer containeren */
+
+    /* Ændring der gør det til en row-reverse */
     flex-direction: row-reverse;
 }
 
 /* Tekstboks START */
 .event-tekst {
     width: min(650px, 52vw);
-    font-family: "Bodoni 72";
+    font-family: "Bodoni 72", "sans-serif";
     font-size: 20px;
     line-height: 1.5;
 }
