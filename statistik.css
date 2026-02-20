@@ -4,32 +4,181 @@ body {
 }
 /* Baggrunden på hele siden SLUT*/
 
-
 .stats-section {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
     margin: 60px auto;
     width: 90%;
 }
 
-.stat-box { /*Kasserne rundt om pointerne*/
-    width: 400px;
+/* Heading and intro text above the statistic boxes */
+.stats-intro {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    text-align: center;
+}
+
+.stats-intro h1 {
+    margin: 0 0 10px;
+}
+
+.stats-intro p {
+    margin: 0;
+    font-family: "Bodoni 72";
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Desktop grid: 3 boxes on top, 2 centered below */
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Shared card style for statistic boxes */
+.stat-box {
+    grid-column: span 2;
     padding: 25px;
     border-radius: 15px;
+    background-color: #d9e2c9;
     box-shadow: 5px 15px 15px rgba(0,0,0,0.3);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
 
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 60px auto;
-    width: 90%;
+.stat-box:nth-child(4) {
+    grid-column: 2 / span 2;
+}
 
+.stat-box:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+.stat-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 8px 20px 24px rgba(0,0,0,0.35);
+}
+
+.stat-box h2 {
+    margin-top: 0;
 }
 
 .stat-box p {
+    font-family: "Bodoni 72";
+    font-size: 20px;
     line-height: 1.6;
     color: black;
+    margin-bottom: 0;
+}
+
+/* Full-width image between statistics and quizzes */
+.stats-image-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto 75px;
+}
+
+.stats-image {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 5px 15px 15px rgba(0,0,0,0.3);
+}
+
+/* Quiz section heading and card links */
+.quiz-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 110px;
+}
+
+.quiz-section h2 {
+    margin-bottom: 20px;
+}
+
+.quiz-intro {
+    max-width: 900px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.quiz-intro h2 {
+    margin: 0 0 10px;
+}
+
+.quiz-intro p {
+    margin: 0;
+    font-family: "Bodoni 72";
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Quiz cards layout */
+.quiz-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.quiz-box {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: #f1f5e8;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 12px 14px rgba(0,0,0,0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.quiz-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 8px 18px 22px rgba(0,0,0,0.32);
+}
+
+.quiz-box h3 {
+    margin: 0 0 10px;
+}
+
+.quiz-box p {
+    margin: 0;
+    font-family: "Bodoni 72";
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Responsive layout for tablet and mobile */
+@media (max-width: 1100px) {
+    .stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stat-box {
+        grid-column: auto;
+    }
+
+    .stat-box:nth-child(4),
+    .stat-box:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .quiz-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-box {
+        grid-column: auto;
+    }
+
+    .stats-image {
+        height: 220px;
+    }
 }
