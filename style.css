@@ -70,10 +70,13 @@ a:active {
 
 /* Her starter TICKER / RULLER */
 
+/* Ticker section shown above footer on all pages */
 .ticker-section {
     background: #222222;
     overflow: hidden;
     padding: 20px 0;
+    /* Adds air between page content and ticker */
+    margin-top: 60px;
     position: static; /* footer sidder fast nederst*/
     bottom: 48px;
     width: 100%;
@@ -84,6 +87,7 @@ a:active {
     overflow: hidden;
 }
 
+/* Track is duplicated in HTML for seamless infinite scroll */
 .ticker-track {
     display: flex;
     gap: 40px;
