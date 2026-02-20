@@ -4,33 +4,6 @@ body {
 }
 /* Baggrunden på hele siden SLUT*/
 
-/* Header START */
-.header {
-    width: 100%;
-    background-color: white; /* Hvid bar øverst */
-}
-
-.header-box {
-    display: flex; /* Gør menuen til flexbox */
-    align-items: center; /* Centrer lodret */
-    justify-content: space-evenly; /* Lige meget afstand mellem alle menupunkter */
-}
-
-.header-box img {
-    height: 60px;
-    width: auto;
-    /* Bevarer proportioner */
-}
-/* Header SLUT */
-
-/* Menu START */
-.menu-item {
-    text-decoration: none; /* Fjerner underline */
-    color: black;
-    font-size: 20px;
-}
-/* Menu SLUT*/
-
 /* EVENTS SIDE TITEL OG FÆLLES EVENT-STYLING */
 
 .event-side-titel p {
