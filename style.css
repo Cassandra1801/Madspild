@@ -1,11 +1,13 @@
-* {
-    font-family: roboto;
+*{
+    font-family: "Bodoni 72", serif;
 }
+
 
 /* HEADER start */
 .header {
     width: 100%;
     background-color: white;
+
 }
 
 .header-box {

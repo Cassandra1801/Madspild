@@ -1,0 +1,134 @@
+/* Baggrunden på hele siden START*/
+body {
+    background-color: #97AC82;
+}
+/* Baggrunden på hele siden SLUT*/
+
+/* Header START */
+.header {
+    width: 100%;
+    background-color: white; /* Hvid bar øverst */
+}
+
+.header-box {
+    display: flex; /* Gør menuen til flexbox */
+    align-items: center; /* Centrer lodret */
+    justify-content: space-evenly; /* Lige meget afstand mellem alle menupunkter */
+}
+
+.header-box img {
+    height: 60px;
+    width: auto;
+    /* Bevarer proportioner */
+}
+/* Header SLUT */
+
+/* Menu START */
+.menu-item {
+    text-decoration: none; /* Fjerner underline */
+    color: black;
+    font-size: 20px;
+}
+/* Menu SLUT*/
+
+/*Overskrift START*/
+h2 {
+    display: flex;
+    /* Gør body til en flex-container */
+
+    justify-content: center;
+    /* Vandret centrering */
+
+    align-items: flex-start;
+    /* Lodret centrering */
+}
+/*Overskrift SLUT*/
+
+/*Intro-tekst START*/
+p {
+    font-family: Arial;
+    font-size: 20px;
+
+    display: flex;
+    /* Gør body til en flex-container */
+
+    justify-content: center;
+    /* Vandret centrering */
+
+    align-items: flex-start;
+    /* Lodret centrering */
+}
+/*Intro-tekst SLUT*/
+
+
+/* ========================= */
+/* FÆLLES OPSKRIFT-STYLING   */
+/* ========================= */
+
+.opskrift {
+    display: flex; /* Lægger tekst og billede på række */
+    align-items: center; /* Centrer lodret */
+    justify-content: space-between; /* Plads mellem tekst og billede */
+
+    gap: 4vw; /* Afstand mellem elementer */
+    width: min(1200px,92vw); /* Max bredde */
+    margin: 40px auto 0; /* Centrer containeren */
+}
+
+.række { /* Layout-variationer (samme stil, forskellig placering*/
+    flex-direction: row;
+}
+
+.række-reverse {
+    flex-direction: row-reverse;
+}
+
+/* Tekstboks START */
+.opskrift-tekst {
+    width: min(650px, 52vw);
+    font-family: "Bodoni 72";
+    font-size: 20px;
+    line-height: 1.5;
+}
+/* Tekstboks SLUT*/
+
+/* Billede-wrapper (gør overlay muligt) */
+.opskrift-billede {
+    position: relative;
+    width: min(500px, 40vw);
+    flex-shrink: 0;
+}
+
+.opskrift-billede img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay tekst (skjult før hover) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+/* Vis overlay når musen er over billedet */
+.opskrift-billede:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
