@@ -4,16 +4,23 @@ body {
 }
 /* Baggrunden på hele siden SLUT*/
 
-/* Menu START */
-.menu-item {
-    text-decoration: none; /* Fjerner underline */
-    color: black;
-    font-size: 20px;
-}
-/* Menu SLUT*/
+/* OPSKRIFT SIDE TITEL OG FÆLLES OPSKRIFT-STYLING */
 
-/*Overskrift START*/
-h2 {
+.opskrift-side-titel p {
+    font-family: "Apple Braille", "sans-serif";
+    font-size: 20px;
+
+    display: flex;
+        /* Gør body til en flex-container */
+
+    justify-content: center;
+        /* Vandret centrering */
+
+    align-items: flex-start;
+        /* Lodret centrering */
+}
+
+.opskrift-side-titel h2 {
     display: flex;
     /* Gør body til en flex-container */
 
@@ -23,30 +30,8 @@ h2 {
     align-items: flex-start;
     /* Lodret centrering */
 }
-/*Overskrift SLUT*/
 
-/*Intro-tekst START*/
-p {
-    font-family: "Apple Braille";
-    font-size: 20px;
-
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
-}
-/*Intro-tekst SLUT*/
-
-
-/* ========================= */
-/* FÆLLES OPSKRIFT-STYLING   */
-/* ========================= */
-
-.opskrift {
+.opskrift-row {
     display: flex; /* Lægger tekst og billede på række */
     align-items: center; /* Centrer lodret */
     justify-content: space-between; /* Plads mellem tekst og billede */
@@ -56,18 +41,23 @@ p {
     margin: 40px auto 0; /* Centrer containeren */
 }
 
-.række { /* Layout-variationer (samme stil, forskellig placering*/
-    flex-direction: row;
-}
+.opskrift-row-reverse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.række-reverse {
+    gap: 4vw;
+    width: min(1200px,92vw);
+    margin: 40px auto 0;
+
+    /* Ændring der gør det til en row-reverse */
     flex-direction: row-reverse;
 }
 
 /* Tekstboks START */
 .opskrift-tekst {
     width: min(650px, 52vw);
-    font-family: "Bodoni 72";
+    font-family: "Bodoni 72", "sans-serif";
     font-size: 20px;
     line-height: 1.5;
 }
@@ -109,5 +99,3 @@ p {
 .opskrift-billede:hover .overlay {
     opacity: 1;
 }
-
-
