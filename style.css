@@ -22,7 +22,7 @@
 .menu-item {
     position: relative;
     padding: 50px;
-    background-image: url("assets-header/menu-bg.png");
+    background-image: url(menu-bg.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
