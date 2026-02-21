@@ -14,6 +14,7 @@ body {
     max-width: 1600px;
     position: relative;
     box-sizing: border-box;
+    font-family: "Bodoni 72", "sans-serif";
 }
 
 .set-img {
@@ -55,7 +56,7 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none;
     background-color: rgba(255,255,255,0.1);
-    font-family: bodoni-72, sans-serif;
+    font-family: "Bodoni 72", "sans-serif";
     transform-origin: center center;
 }
 
@@ -67,7 +68,7 @@ body {
 h1 {
     text-align: center;
     text-decoration: none;
-    font-family: bodoni-72, sans-serif;
+    font-family: "Bodoni 72", "sans-serif";
 }
 
 p {
@@ -76,5 +77,5 @@ p {
     text-align: justify;
     text-decoration: none;
     font-size: x-large;
-    font-family: bodoni-72, sans-serif;
+    font-family: "Bodoni 72", "sans-serif";
 }
