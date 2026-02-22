@@ -76,6 +76,7 @@ body {
     max-width: 1600px;
     position: relative;
     box-sizing: border-box;
+    font-family: "Bodoni 72", "sans-serif";
 }
 
 .set-img {
@@ -117,7 +118,7 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease;
     pointer-events: none;
     background-color: rgba(255,255,255,0.1);
-    font-family: "Bodoni 72", serif;
+    font-family: "Bodoni 72", "sans-serif";
     transform-origin: center center;
 }
 
@@ -149,6 +150,7 @@ h1 {
     text-align: center;
     margin: 80px 0 0;
     font-size: 2rem;
+    font-family: "Bodoni 72", "sans-serif";
 }
 
 p {
@@ -164,4 +166,5 @@ p {
     .values-container {
         grid-template-columns: 1fr;
     }
+    font-family: "Bodoni 72", "sans-serif";
 }
