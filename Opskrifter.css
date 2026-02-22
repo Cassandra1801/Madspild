@@ -12,34 +12,22 @@ body {
 }
 /* Menu SLUT*/
 
-/*Overskrift START*/
-h2 {
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
+.page-intro {
+    max-width: 900px;
+    margin: 35px auto 10px;
+    text-align: center;
+    font-family: "Bodoni 72", serif;
 }
-/*Overskrift SLUT*/
 
-/*Intro-tekst START*/
-p {
-    font-family: "Apple Braille";
+.page-intro h1 {
+    margin: 0 0 10px;
+}
+
+.intro-text {
+    margin: 0;
     font-size: 20px;
-
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
+    line-height: 1.6;
 }
-/*Intro-tekst SLUT*/
 
 
 /* ========================= */
@@ -109,5 +97,4 @@ p {
 .opskrift-billede:hover .overlay {
     opacity: 1;
 }
-
 
