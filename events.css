@@ -5,68 +5,40 @@ body {
 /* Baggrunden på hele siden SLUT*/
 
 /* EVENTS SIDE TITEL OG FÆLLES EVENT-STYLING */
-
-.event-side-titel p {
-    font-family: "Apple Braille", "sans-serif";
-    font-size: 20px;
-
-.page-intro {
-    max-width: 900px;
+.event-side-titel {
+    width: min(1200px, 92vw);
     margin: 35px auto 10px;
     text-align: center;
-    font-family: "Bodoni 72", serif;
-}
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-.page-intro h1 {
-    margin: 0 0 10px;
 }
 
-.intro-text {
-    margin: 0;
-    font-size: 20px;
-    line-height: 1.6;
-}
-
-/* ========================= */
-/* FÆLLES EVENT-STYLING   */
-/* ========================= */
 .event-side-titel h2 {
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
+    margin: 0 0 8px;
 }
 
-.event-row {
-    display: flex; /* Lægger tekst og billede på række */
-    align-items: center; /* Centrer lodret */
-    justify-content: space-between; /* Plads mellem tekst og billede */
+.event-side-titel p {
+    margin: 0;
+    font-family: "Apple Braille", "sans-serif";
+    font-size: 20px;
+}
 
-    gap: 4vw; /* Afstand mellem elementer */
-    width: min(1200px,92vw); /* Max bredde */
-    margin: 40px auto 0; /* Centrer containeren */
+/* FÆLLES EVENT-STYLING */
+.event-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vw;
+    width: min(1200px, 92vw);
+    margin: 40px auto 0;
     flex-direction: row;
 }
 
 .event-row-reverse {
-    display: flex; /* Lægger tekst og billede på række */
-    align-items: center; /* Centrer lodret */
-    justify-content: space-between; /* Plads mellem tekst og billede */
-
-    gap: 4vw; /* Afstand mellem elementer */
-    width: min(1200px,92vw); /* Max bredde */
-    margin: 40px auto 0; /* Centrer containeren */
-
-    /* Ændring der gør det til en row-reverse */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4vw;
+    width: min(1200px, 92vw);
+    margin: 40px auto 0;
     flex-direction: row-reverse;
 }
 
@@ -97,21 +69,38 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 100%;
     height: 100%;
-
     background: rgba(255, 255, 255, 0.7);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     opacity: 0;
     transition: 0.3s ease;
+}
+
+.overlay a {
+    font-family: "Bodoni 72", serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f2a18;
 }
 
 /* Vis overlay når musen er over billedet */
 .event-billede:hover .overlay {
     opacity: 1;
+}
+
+@media (max-width: 900px) {
+    .event-row,
+    .event-row-reverse {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 28px;
+    }
+
+    .event-tekst,
+    .event-billede {
+        width: 100%;
+    }
 }
