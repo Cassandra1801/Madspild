@@ -59,6 +59,7 @@ body {
 }
 
 .stats-section {
+    margin: 35px auto 60px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

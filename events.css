@@ -10,16 +10,31 @@ body {
     font-family: "Apple Braille", "sans-serif";
     font-size: 20px;
 
+.page-intro {
+    max-width: 900px;
+    margin: 35px auto 10px;
+    text-align: center;
+    font-family: "Bodoni 72", serif;
+}
     display: flex;
     /* Gør body til en flex-container */
 
     justify-content: center;
     /* Vandret centrering */
 
-    align-items: flex-start;
-    /* Lodret centrering */
+.page-intro h1 {
+    margin: 0 0 10px;
 }
 
+.intro-text {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* ========================= */
+/* FÆLLES EVENT-STYLING   */
+/* ========================= */
 .event-side-titel h2 {
     display: flex;
     /* Gør body til en flex-container */
