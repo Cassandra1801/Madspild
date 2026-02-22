@@ -1,7 +1,6 @@
 /* Baggrunden på hele siden START*/
 body {
     background-color: #97AC82;
-    font-family: "Bodoni 72", serif;
     overflow-x: hidden;
 }
 /* Baggrunden på hele siden SLUT*/
@@ -67,16 +66,16 @@ body {
 }
 
 .content-box {
+    width: 50%;
+    margin: 0 auto;
+    text-align: justify;
     margin-top: 8px;
-    margin-left: auto;
-    margin-right: auto;
-
     padding-top: 40px;
-    width: 100%;
     max-width: 1600px;
     position: relative;
     box-sizing: border-box;
     font-family: "Bodoni 72", "sans-serif";
+    font-size: x-large;
 }
 
 .set-img {
@@ -127,13 +126,9 @@ body {
     transform: scale(1.1);
 }
 
-h1 {
+.page-title {
     text-align: center;
     text-decoration: none;
-    font-family: "Bodoni 72", serif;
-}
-
-.page-title {
     margin: 35px 0 0;
 }
 
@@ -153,18 +148,8 @@ h1 {
     font-family: "Bodoni 72", "sans-serif";
 }
 
-p {
-    width: 50%;
-    margin: 0 auto;
-    text-align: justify;
-    text-decoration: none;
-    font-size: x-large;
-    font-family: "Bodoni 72", serif;
-}
-
 @media (max-width: 900px) {
     .values-container {
         grid-template-columns: 1fr;
     }
-    font-family: "Bodoni 72", "sans-serif";
 }
