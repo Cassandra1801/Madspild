@@ -4,7 +4,6 @@ body {
 }
 /* Baggrunden på hele siden SLUT */
 
-.stats-section,
 .hero-section,
 .highlight-section,
 .quiz-section {
@@ -63,7 +62,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: auto;
     width: 90%;
     padding: 40px 0;
 }
@@ -81,7 +79,6 @@ body {
 
 .stats-intro p {
     margin: 0;
-    font-family: "Bodoni 72", sans-serif;
     font-size: 20px;
     line-height: 1.6;
 }
